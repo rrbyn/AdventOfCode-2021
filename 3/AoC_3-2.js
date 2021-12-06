@@ -38,6 +38,3 @@ function ratingFilter(ratingArray,ratingCounter,i,ratingType){
         return ratingArray
     }
 }
-
-
-
