@@ -6,21 +6,20 @@ let day = 0
 for (el in array) {
     fishArray[array[el]]++
 }
-console.log(fishArray)
 
-while (day < 3) {
+
+while (day < 256) {
     movefishAmount = fishArray[0]
-    for (let i = 1; i < fishArray.length -1; i++) {
+    for (let i = 1; i < fishArray.length; i++) {
         fishArray[i - 1] = fishArray[i]
-        console.log[fishArray[8]]
     }
-    if (movefishAmount) {
-        console.log(movefishAmount)
+    fishArray[8] = 0
+    if (movefishAmount != 0) {
         fishArray[6] += movefishAmount
         fishArray[8] += movefishAmount
     }
     day++
 }
 console.log(fishArray)
-console.log(fishArray.reduce((a,b)=>a+b))
+console.log(fishArray.reduce((a,b)=> a+b))
 
