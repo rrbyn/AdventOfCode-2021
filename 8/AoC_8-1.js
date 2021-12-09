@@ -1,7 +1,6 @@
 /* not my best code ;) */
 
-let fs = require('fs');
-let array = fs.readFileSync('input8.txt').toString().split(/\r?\n/)
+
 for (el in array) {
     array[el] = array[el].split(' | ')
     array[el][0] = array[el][0].split(' ')
@@ -93,5 +92,3 @@ function find(currentLine, finder, clock, clockLetters) {
         }
     }
 }
-
-
