@@ -1,6 +1,6 @@
 /* not my best code ;) */
-
-
+let fs = require('fs');
+let array = fs.readFileSync('input7.txt').toString().split(',')
 for (el in array) {
     array[el] = array[el].split(' | ')
     array[el][0] = array[el][0].split(' ')
